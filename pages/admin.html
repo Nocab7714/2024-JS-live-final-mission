@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOWOROOM | 後台管理</title>
+    <%- include('./layout/cssCDN'); -%>
+  </head>
+  <body>
+    <nav class="topBar">
+      <div class="wrap">
+        <h1><a href="#" class="logo">WOWOROOM</a></h1>
+        <span class="material-icons menuToggle"> menu </span>
+        <ul class="topBar-menu">
+          <li><a href="#">後台管理</a></li>
+          <li><a href="#">管理員登入</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="wrap">
+      <h2 class="section-title">全產品類別營收比重</h2>
+      <div id="chart"></div>
+    </section>
+    <section class="wrap orderPage-list">
+      <div style="display: flex; justify-content: space-between">
+        <a href="#" class="toggleChartBtn">切換圖表</a>
+        <a href="#" class="discardAllBtn">清除全部訂單</a>
+      </div>
+
+      <div class="orderTableWrap">
+        <table class="orderPage-table">
+          <thead>
+            <tr>
+              <th>訂單編號</th>
+              <th>聯絡人</th>
+              <th>聯絡地址</th>
+              <th>電子郵件</th>
+              <th>訂單品項</th>
+              <th>訂單日期</th>
+              <th>訂單狀態</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 訂單資料渲染 -->
+            <tr>
+              <td>isLoading ...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  <%- include('./layout/jsCDN'); -%>
+  <script type="module" src="../main.js"></script>
+  <script type="module" src="../js/admin.js"></script>
+</html>
